@@ -44,6 +44,7 @@ public class EyebatController {
             bat.update(delta);
 
             if (bat.shouldRemove()) {
+                player.setEnemyKilled();
                 bats.remove(i);
             }
         }

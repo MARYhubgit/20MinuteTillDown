@@ -46,19 +46,16 @@ public class Eyebat extends Enemy {
 
         if (player == null || !player.isAlive()) return;
 
-        // محاسبه هدف جدید هر 1.5 ثانیه
         if (attackCooldown <= 0) {
             calculateNewTarget();
             attackCooldown = ATTACK_DELAY;
         }
 
-        // شلیک هر 3 ثانیه
         if (shootTimer >= SHOOT_INTERVAL) {
             shoot();
             shootTimer = 0;
         }
 
-        // محاسبه جهت نهایی
         Vector2 toPlayer = new Vector2(
             player.getX() - x,
             player.getY() - y
@@ -71,22 +68,21 @@ public class Eyebat extends Enemy {
 
         finalDirection.set(toPlayer).scl(0.7f).add(toTarget.scl(0.3f)).nor();
 
-        // اعمال حرکت
+
         x += finalDirection.x * speed * delta;
         y += finalDirection.y * speed * delta;
 
-        // به‌روزرسانی اسپرایت
         sprite.setRegion(flyAnimation.getKeyFrame(stateTime, true));
         sprite.setPosition(x - width/2, y - height/2);
         sprite.setFlip(finalDirection.x < 0, false);
 
-        // آپدیت پرتابه‌ها
+
         for (EyebatBullet bullet : bullets) {
             bullet.update(delta);
         }
         if (player != null && player.isAlive() &&
             getCollision().collidesWith(player.getBounds())) {
-            this.hp = 0; // هیولای فعلی می‌میرد
+            this.hp = 0;
             Gdx.app.log("COLLISION", "Eyebat collided with player");
         }
     }

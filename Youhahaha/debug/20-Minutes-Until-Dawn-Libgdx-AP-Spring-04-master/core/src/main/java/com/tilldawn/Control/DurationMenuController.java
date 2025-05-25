@@ -10,9 +10,12 @@ public class DurationMenuController {
     }
 
     public void selectDuration(int minutes) {
-        settings.setDurationMinutes(minutes);
-        System.out.println("Duration selected: " + minutes + " minutes");
+        settings.setDurationMinutes(minutes  * 60f);
     }
+    public void setTotalMinutes(int totalMinutes) {
+        settings.setTotalTimeInSeconds(totalMinutes * 60f);
+    }
+
 
     public GameSettings getSettings() {
         return settings;

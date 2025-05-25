@@ -59,6 +59,7 @@ public class TreeController {
 
             if (!tree.isAlive()) {
                 trees.remove(i);
+                playerController.getPlayer().setEnemyKilled();
             }
         }
     }

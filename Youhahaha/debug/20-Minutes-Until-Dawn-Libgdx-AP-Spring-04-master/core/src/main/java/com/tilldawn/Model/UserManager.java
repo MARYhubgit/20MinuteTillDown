@@ -5,6 +5,7 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class UserManager {
@@ -19,7 +20,7 @@ public class UserManager {
         "avatars/avatar4.png"
     };
 
-    public UserManager() {}
+    private UserManager() {}
 
     public static UserManager getInstance() {
         if (instance == null) {
@@ -33,10 +34,14 @@ public class UserManager {
     }
 
     public void saveUser() {
-        if (currentUser != null) {
+        if (currentUser != null && !isGuest(currentUser)) {
             Json json = new Json();
+
+
             FileHandle file = Gdx.files.local(savePath);
             file.writeString(json.toJson(currentUser), false);
+
+
             List<User> users = loadAllUsers();
             users.removeIf(u -> u.getUsername().equalsIgnoreCase(currentUser.getUsername()));
             users.add(currentUser);
@@ -55,7 +60,7 @@ public class UserManager {
 
     public User findUser(String username) {
         for (User user : loadAllUsers()) {
-            if (user.getUsername().equals(username)) {
+            if (user.getUsername().equalsIgnoreCase(username)) {
                 return user;
             }
         }
@@ -71,62 +76,70 @@ public class UserManager {
     private List<User> loadAllUsers() {
         FileHandle file = Gdx.files.local(allUsersPath);
         if (!file.exists()) return new ArrayList<>();
+
         Json json = new Json();
-        return json.fromJson(ArrayList.class, User.class, file.readString());
+        List<User> users = json.fromJson(ArrayList.class, User.class, file.readString());
+
+        if (users == null) {
+            return new ArrayList<>();
+        }
+        return users;
     }
+
+
     public boolean isUsernameTaken(String username) {
         return findUser(username) != null;
     }
+
     public String getRandomAvatarPath() {
         int idx = (int) (Math.random() * avatarPaths.length);
         return avatarPaths[idx];
     }
+
     public User registerUser(String username, String password, String securityQuestion, String securityAnswer, String avatarPath) {
-        User newUser = new User(username, avatarPath,password,securityQuestion,securityAnswer);
+        User newUser = new User(username, avatarPath, password, securityQuestion, securityAnswer);
         List<User> users = loadAllUsers();
         users.add(newUser);
         saveAllUsers(users);
         setCurrentUser(newUser);
         return newUser;
     }
+
     public void createGuestUser() {
-        User guest = new User("Guest" + System.currentTimeMillis(),getRandomAvatarPath(),"no password","","");
+        User guest = new User("Guest" + System.currentTimeMillis(), getRandomAvatarPath(), "no password", "", "");
         setCurrentUser(guest);
     }
+
     public User getUserByUsername(String username) {
-        for (User user : loadAllUsers()) {
-            if (user.getUsername().equals(username)) {
-                return user;
-            }
-        }
-        return null;
+        return findUser(username);
     }
 
     public void updateUser(User updatedUser) {
         List<User> users = loadAllUsers();
+        boolean updated = false;
         for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getUsername().equalsIgnoreCase(updatedUser.getUsername())) {
                 users.set(i, updatedUser);
+                updated = true;
                 break;
             }
         }
+        if (!updated) {
+            users.add(updatedUser);
+        }
         saveAllUsers(users);
+        if (currentUser != null && currentUser.getUsername().equalsIgnoreCase(updatedUser.getUsername())) {
+            currentUser = updatedUser;
+        }
     }
 
-
-//    public void removeUser(User currentUser) {
-//        List<User> users = loadAllUsers();
-//        for (int i = 0; i < users.size(); i++) {
-//            if (users.get(i).getUsername().equalsIgnoreCase(currentUser.getUsername())) {
-//                users.remove(i);
-//                break;
-//            }
-//        }
-//    }
-    public void removeUser(User currentUser) {
+    public void removeUser(User user) {
         List<User> users = loadAllUsers();
-        users.removeIf(u -> u.getUsername().equalsIgnoreCase(currentUser.getUsername()));
+        users.removeIf(u -> u.getUsername().equalsIgnoreCase(user.getUsername()));
         saveAllUsers(users);
+        if (currentUser != null && currentUser.getUsername().equalsIgnoreCase(user.getUsername())) {
+            currentUser = null;
+        }
     }
 
     public boolean hasSave() {
@@ -135,5 +148,12 @@ public class UserManager {
     }
 
     public List<User> getTopUsers() {
-        return loadAllUsers();}
+        List<User> users = loadAllUsers();
+        users.sort(Comparator.comparingInt(User::getScore).reversed());
+        return users;
+    }
+
+    private boolean isGuest(User user) {
+        return user.getUsername().toLowerCase().startsWith("guest");
+    }
 }

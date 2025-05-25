@@ -32,7 +32,8 @@ public class Tree extends Enemy {
 
             else if (alive) {
                 alive = false;
-                Gdx.app.log("TREE", "Destroyed on collision with player");
+
+            Gdx.app.log("TREE", "Destroyed on collision with player");
             }
         }
     }

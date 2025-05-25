@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameSettings {
-    private Hero selectedHero;
+    private HeroType selectedHero;
     private Weapon selectedWeapon;
     private static GameSettings instance;
-    private int durationMinutes;
+    private float durationMinutes;
+    private float totalTimeInSeconds;
     private boolean blackAndWhiteMode;
     private final List<Ability> acquiredAbilities = new ArrayList<>();
     private final List<String> cheatCodes = new ArrayList<>();
@@ -19,8 +20,11 @@ public class GameSettings {
         keyBindings.add("S - Move Down");
         keyBindings.add("D - Move Right");
 
-        cheatCodes.add("IDDQD");
-        cheatCodes.add("IDKFA");
+        cheatCodes.add("l");
+        cheatCodes.add("u");
+        cheatCodes.add("j");
+        cheatCodes.add("b");
+        cheatCodes.add("k");
 
     }
 
@@ -32,14 +36,15 @@ public class GameSettings {
     }
 
 
-    public Hero getSelectedHero() {
+    public HeroType getSelectedHero() {
         return selectedHero;
     }
-    public void setSelectedHero(Hero selectedHero) {
+
+    public void setSelectedHero(HeroType selectedHero) {
         this.selectedHero = selectedHero;
     }
 
-    // --- Weapon ---
+
     public Weapon getSelectedWeapon() {
         return selectedWeapon;
     }
@@ -47,15 +52,21 @@ public class GameSettings {
         this.selectedWeapon = selectedWeapon;
     }
 
-    // --- Duration ---
-    public int getDurationMinutes() {
+
+    public float getDurationMinutes() {
         return durationMinutes;
     }
-    public void setDurationMinutes(int durationMinutes) {
+    public void setDurationMinutes(float durationMinutes) {
         this.durationMinutes = durationMinutes;
     }
+    public void setTotalTimeInSeconds(float totalTimeInSeconds) {
+        this.totalTimeInSeconds = totalTimeInSeconds;
+    }
+    public float getTotalTimeInSeconds() {
+        return totalTimeInSeconds;
+    }
 
-    // --- Graphics Mode ---
+
     public boolean isBlackAndWhiteMode() {
         return blackAndWhiteMode;
     }
@@ -63,13 +74,14 @@ public class GameSettings {
         this.blackAndWhiteMode = blackAndWhiteMode;
     }
 
-    // --- Abilities & Cheats (برای منوی Pause) ---
+
     public List<Ability> getAcquiredAbilities() {
         return acquiredAbilities;
     }
     public void addAbility(Ability a) {
         acquiredAbilities.add(a);
     }
+
     public List<String> getCheatCodes() {
         return cheatCodes;
     }
@@ -81,7 +93,7 @@ public class GameSettings {
         return keyBindings;
     }
 
-    /** افزودن یک کلید جدید به تنظیمات */
+
     public void addKeyBinding(String key) {
         keyBindings.add(key);
     }

@@ -12,7 +12,6 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.tilldawn.Control.*;
 import com.tilldawn.Main;
 import com.tilldawn.Model.*;
-import com.tilldawn.View.GameView;
 
 
 
@@ -49,6 +48,7 @@ public class PreGameMenuView implements Screen {
         this.startCtrl    = new GameStartController(settings);
         this.settings = settings;
     }
+
 
     @Override
     public void show() {
@@ -96,29 +96,30 @@ public class PreGameMenuView implements Screen {
             public void clicked(InputEvent event, float x, float y) {
                 try {
                     HeroType heroType = heroBox.getSelected() != null ?
-                        heroBox.getSelected() : HeroType.WITCH;
-                    heroCtrl.selectHero(new Hero(heroType));
+                        heroBox.getSelected() : HeroType.SHANA;
+                    heroCtrl.selectHero(heroType);
 
                     WeaponType weaponType = weaponBox.getSelected() != null ?
                         weaponBox.getSelected() : WeaponType.SMG_DUAL;
                     weaponCtrl.selectWeapon(new Weapon(weaponType));
 
-                    // 3. تنظیم مدت زمان (پیش‌فرض: 5 دقیقه)
+
                     int duration = durationBox.getSelected() != null ?
                         durationBox.getSelected() : 5;
                     durationCtrl.selectDuration(duration);
+                    durationCtrl.setTotalMinutes(duration);
 
-                    // 4. ایجاد بازی
+
                     GameController gameController = new GameController(settings);
                     game.setScreen(new GameView(
                         gameController,
                         skin,
                         settings
                     ));
+                    System.out.println("GameView _ before calling setView");
 
                 } catch (Exception e) {
 
-                    // برگشت به منوی اصلی با پارامترهای واقعی
                     MainMenuController mainMenuController = new MainMenuController(game, userManager);
                     Skin skin = GameAssetManager.getInstance().getSkin();
                     game.setScreen(new MainMenuView(

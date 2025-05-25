@@ -28,26 +28,18 @@ public class Lwjgl3Launcher {
         createApplication(fileChooser);
     }
 
-//    private static Lwjgl3Application createApplication(FileChooserInterface fileChooser) {
-//        // فرض می‌کنیم Main یک کانستراکتور جدید می‌پذیرد:
-//        // public Main(FileChooserInterface fileChooser) { … }
-//        return new Lwjgl3Application(new Main(fileChooser), getDefaultConfiguration());
-//    }
-
     private static Lwjgl3Application createApplication(FileChooserInterface fileChooser) {
         Main main = new Main(fileChooser);
         Lwjgl3Application app = new Lwjgl3Application(main, getDefaultConfiguration());
 
-        // ایجاد یک JFrame کوچک نامرئی برای دریافت درگ و دراپ
         JFrame dragFrame = new JFrame();
         dragFrame.setUndecorated(true);
-        dragFrame.setSize(400, 400); // اندازه دلخواه
+        dragFrame.setSize(450, 450);
         dragFrame.setLocationRelativeTo(null);
         dragFrame.setAlwaysOnTop(true);
-        dragFrame.setOpacity(0.01f); // تقریبا نامرئی
+        dragFrame.setOpacity(0.01f);
         dragFrame.setVisible(true);
 
-        // اضافه کردن قابلیت درگ و دراپ
         new java.awt.dnd.DropTarget(dragFrame, new java.awt.dnd.DropTargetAdapter() {
             @Override
             public void drop(java.awt.dnd.DropTargetDropEvent event) {

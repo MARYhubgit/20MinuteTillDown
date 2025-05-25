@@ -34,6 +34,7 @@ public class TentacleController {
             tentacle.update(deltaTime);
 
             if (tentacle.shouldRemove()) {
+                playerController.getPlayer().setEnemyKilled();
                 tentacles.remove(i);
             }
         }

@@ -26,7 +26,7 @@ public class PreGameMenuController {
         settings.addCheatCode("7f8f");
     }
 
-    public void selectHero(Hero hero) {
+    public void selectHero(HeroType hero) {
         settings.setSelectedHero(hero);
     }
 

@@ -1,0 +1,1078 @@
+[
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751245338735
+	score: 760
+	survivedTime: 1177.6082
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	score: 360
+	survivedTime: 570.4806
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751390501102
+	score: 47
+	survivedTime: 118.868095
+	enemiesKilled: 47
+	xpEarned: 141
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751323240588
+	score: 35
+	survivedTime: 118.64834
+	enemiesKilled: 35
+	xpEarned: 105
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751327044717
+	score: 36
+	survivedTime: 118.549675
+	enemiesKilled: 36
+	xpEarned: 108
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751388809339
+	score: 61
+	survivedTime: 118.53346
+	enemiesKilled: 61
+	xpEarned: 183
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751388237277
+	score: 114
+	survivedTime: 118.13528
+	enemiesKilled: 114
+	xpEarned: 342
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751387976622
+	score: 93
+	survivedTime: 117.09998
+	enemiesKilled: 93
+	xpEarned: 279
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751390501102
+	score: 49
+	survivedTime: 116.282936
+	enemiesKilled: 49
+	xpEarned: 147
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751388237277
+	score: 47
+	survivedTime: 116.235016
+	enemiesKilled: 47
+	xpEarned: 141
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751387805961
+	score: 59
+	survivedTime: 115.01617
+	enemiesKilled: 59
+	xpEarned: 177
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751388809339
+	score: 58
+	survivedTime: 114.76372
+	enemiesKilled: 58
+	xpEarned: 174
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751330859294
+	score: 42
+	survivedTime: 108.95069
+	enemiesKilled: 42
+	xpEarned: 126
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751331076535
+	score: 40
+	survivedTime: 104.78593
+	enemiesKilled: 40
+	xpEarned: 120
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751330681652
+	score: 46
+	survivedTime: 104.2002
+	enemiesKilled: 46
+	xpEarned: 138
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751387805961
+	score: 42
+	survivedTime: 103.317184
+	enemiesKilled: 42
+	xpEarned: 126
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751387805961
+	score: 40
+	survivedTime: 103.13003
+	enemiesKilled: 40
+	xpEarned: 120
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751327351735
+	score: 43
+	survivedTime: 103.00126
+	enemiesKilled: 43
+	xpEarned: 129
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751327044717
+	score: 43
+	survivedTime: 101.0683
+	enemiesKilled: 43
+	xpEarned: 129
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751327044717
+	score: 42
+	survivedTime: 100.418
+	enemiesKilled: 42
+	xpEarned: 126
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 40
+	survivedTime: 99.11896
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751302081352
+	score: 40
+	survivedTime: 97.61923
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751307418900
+	score: 40
+	survivedTime: 97.603165
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751245285989
+	score: 40
+	survivedTime: 97.50435
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306835225
+	score: 40
+	survivedTime: 97.470825
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751327351735
+	score: 43
+	survivedTime: 97.469925
+	enemiesKilled: 43
+	xpEarned: 129
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751326060857
+	score: 55
+	survivedTime: 97.46431
+	enemiesKilled: 55
+	xpEarned: 165
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 40
+	survivedTime: 97.45183
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 40
+	survivedTime: 97.436325
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 44
+	survivedTime: 97.42458
+	enemiesKilled: 44
+	xpEarned: 44
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751326060857
+	score: 43
+	survivedTime: 97.34718
+	enemiesKilled: 43
+	xpEarned: 129
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318395864
+	score: 42
+	survivedTime: 97.26821
+	enemiesKilled: 42
+	xpEarned: 42
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 40
+	survivedTime: 97.14055
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751308662813
+	score: 41
+	survivedTime: 96.91087
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 41
+	survivedTime: 96.89799
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751245338735
+	score: 40
+	survivedTime: 96.882706
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751326661951
+	score: 47
+	survivedTime: 96.49896
+	enemiesKilled: 47
+	xpEarned: 141
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751330681652
+	score: 45
+	survivedTime: 96.46619
+	enemiesKilled: 45
+	xpEarned: 135
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751302037721
+	score: 40
+	survivedTime: 96.10155
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751307418900
+	score: 41
+	survivedTime: 95.383644
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 40
+	survivedTime: 95.369545
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306647750
+	score: 40
+	survivedTime: 94.703445
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 42
+	survivedTime: 94.59608
+	enemiesKilled: 42
+	xpEarned: 42
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751308662813
+	score: 40
+	survivedTime: 94.58587
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751308835771
+	score: 47
+	survivedTime: 94.46473
+	enemiesKilled: 47
+	xpEarned: 47
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 41
+	survivedTime: 93.563126
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751392545164
+	score: 13
+	survivedTime: 93.02009
+	enemiesKilled: 13
+	xpEarned: 39
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751308835771
+	score: 45
+	survivedTime: 92.50349
+	enemiesKilled: 45
+	xpEarned: 45
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751326661951
+	score: 47
+	survivedTime: 91.53323
+	enemiesKilled: 47
+	xpEarned: 141
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 41
+	survivedTime: 90.833405
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 43
+	survivedTime: 90.73438
+	enemiesKilled: 43
+	xpEarned: 43
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 39
+	survivedTime: 89.433914
+	enemiesKilled: 39
+	xpEarned: 39
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 45
+	survivedTime: 88.41878
+	enemiesKilled: 45
+	xpEarned: 45
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 40
+	survivedTime: 88.22151
+	enemiesKilled: 40
+	xpEarned: 40
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 42
+	survivedTime: 87.85555
+	enemiesKilled: 42
+	xpEarned: 42
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 48
+	survivedTime: 86.6365
+	enemiesKilled: 48
+	xpEarned: 48
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751477680021
+	score: 13
+	survivedTime: 85.06709
+	enemiesKilled: 13
+	xpEarned: 39
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 38
+	survivedTime: 84.418945
+	enemiesKilled: 38
+	xpEarned: 38
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751306898538
+	score: 41
+	survivedTime: 84.386314
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 45
+	survivedTime: 81.04148
+	enemiesKilled: 45
+	xpEarned: 45
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 49
+	survivedTime: 80.81927
+	enemiesKilled: 49
+	xpEarned: 49
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 47
+	survivedTime: 77.034584
+	enemiesKilled: 47
+	xpEarned: 47
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 41
+	survivedTime: 74.333084
+	enemiesKilled: 41
+	xpEarned: 41
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751330991753
+	score: 52
+	survivedTime: 64.689896
+	enemiesKilled: 52
+	xpEarned: 156
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751318453793
+	score: 100
+	survivedTime: 60.575222
+	enemiesKilled: 100
+	xpEarned: 100
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	enemiesKilled: 3
+	xpEarned: 9
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	enemiesKilled: 4
+	xpEarned: 12
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	survivedTime: 29.151655
+	enemiesKilled: 10
+	xpEarned: 30
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	score: 5
+	survivedTime: 95.56491
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Mary
+	score: 5
+	survivedTime: 88.40374
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751647055884
+	score: 12
+	survivedTime: 93.385124
+	enemiesKilled: 12
+	xpEarned: 36
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751650341392
+	survivedTime: 104.69984
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751652235315
+	score: 10
+	survivedTime: 88.53276
+	enemiesKilled: 10
+	xpEarned: 30
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751652235315
+	score: 26
+	survivedTime: 81.505394
+	enemiesKilled: 26
+	xpEarned: 78
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677256642
+	score: 1
+	survivedTime: 110.869514
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677256642
+	score: 2
+	survivedTime: 115.33403
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677256642
+	score: 2
+	survivedTime: 113.36742
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677379182
+	survivedTime: 112.1182
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677379182
+	survivedTime: 113.95329
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677379182
+	survivedTime: 114.96562
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677497194
+	survivedTime: 59.483162
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677497194
+	survivedTime: 53.64906
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677497194
+	score: 4
+	survivedTime: 111.25171
+	enemiesKilled: 4
+	xpEarned: 12
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751677957127
+	score: 7
+	survivedTime: 85.12364
+	enemiesKilled: 7
+	xpEarned: 21
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678486106
+	survivedTime: 57.21837
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678486106
+	survivedTime: 57.222145
+	enemiesKilled: 7
+	xpEarned: 21
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678486106
+	survivedTime: 54.233555
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678486106
+	survivedTime: 55.534363
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678486106
+	survivedTime: 55.63565
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678686630
+	survivedTime: 54.547188
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678686630
+	survivedTime: 48.519043
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751678686630
+	survivedTime: 35.333992
+	enemiesKilled: 15
+	xpEarned: 45
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751680359468
+	survivedTime: 3.1539114
+	enemiesKilled: 8
+	xpEarned: 24
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751681879390
+	survivedTime: 53.70167
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751681879390
+	survivedTime: 47.499737
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682292674
+	survivedTime: 54.801735
+	enemiesKilled: 4
+	xpEarned: 12
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682292674
+	survivedTime: 20.967583
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682292674
+	survivedTime: 54.41629
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682292674
+	survivedTime: 54.550255
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682292674
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682507680
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682507680
+	survivedTime: 53.668068
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682507680
+	survivedTime: 7.7175803
+	enemiesKilled: 7
+	xpEarned: 21
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751682687422
+	survivedTime: 23.169718
+	enemiesKilled: 3
+	xpEarned: 9
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684118864
+	survivedTime: 2.3352246
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684371307
+	survivedTime: 43.150776
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684371307
+	survivedTime: 59.818073
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684371307
+	survivedTime: 59.816986
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684371307
+	survivedTime: 59.817074
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684371307
+	survivedTime: 59.815926
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684371307
+	survivedTime: 59.81209
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 59.818047
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 55.75122
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 56.0896
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 54.68586
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 18.067953
+	enemiesKilled: 8
+	xpEarned: 24
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 59.817284
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 58.534298
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 59.81612
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751684796754
+	survivedTime: 7.783466
+	enemiesKilled: 4
+	xpEarned: 12
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751691303172
+	survivedTime: 59.81699
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751691303172
+	survivedTime: 53.300632
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751691935777
+	survivedTime: 53.517635
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751691935777
+	survivedTime: 34.55433
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751691935777
+	survivedTime: 17.468885
+	enemiesKilled: 4
+	xpEarned: 12
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 118.688545
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 116.70146
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 93.26775
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 118.66701
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 118.56396
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 118.61719
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 118.48135
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692595749
+	survivedTime: 118.68317
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692704581
+	score: 1
+	survivedTime: 83.21768
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692704581
+	score: 1
+	survivedTime: 68.268166
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751692909471
+	score: 2
+	survivedTime: 73.718475
+	enemiesKilled: 2
+	xpEarned: 6
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751693074732
+	survivedTime: 117.481735
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751693074732
+	survivedTime: 117.48225
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751693074732
+	survivedTime: 117.43218
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751693962158
+	survivedTime: 15.783887
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751693962158
+	survivedTime: 37.064533
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751699460992
+	score: 1
+	survivedTime: 76.98502
+	enemiesKilled: 1
+	xpEarned: 3
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751699986169
+	survivedTime: 31.01875
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751700408400
+	survivedTime: 37.07225
+	enemiesKilled: 19
+	xpEarned: 57
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751700673505
+	survivedTime: 49.182915
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751700739103
+	survivedTime: 38.549065
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751701254598
+	survivedTime: 0.38652793
+	enemiesKilled: 7
+	xpEarned: 21
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751701254598
+	survivedTime: 27.401117
+	enemiesKilled: 8
+	xpEarned: 24
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751703172899
+	survivedTime: 26.98612
+	enemiesKilled: 7
+	xpEarned: 21
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751703172899
+	survivedTime: 32.585243
+	enemiesKilled: 5
+	xpEarned: 15
+}
+{
+	class: com.tilldawn.Model.ScoreEntry
+	username: Guest1751703674028
+	survivedTime: 8.703201
+	enemiesKilled: 6
+	xpEarned: 18
+}
+]

@@ -9,13 +9,19 @@ public class EnemyController {
     private TreeController treeController;
     private TentacleController tentacleController;
     private EyebatController eyebatController;
+    private ElderController elderController;
+
 
     public EnemyController(PlayerController playerController) {
         this.playerController = playerController;
         treeController = new TreeController(playerController);
         tentacleController = new TentacleController(playerController);
         eyebatController = new EyebatController(playerController.getPlayer());
-//        elderController = new ElderController(playerController);
+        try {
+            elderController = new ElderController(playerController);
+        }catch(NullPointerException e){
+            System.out.println("Elder controller is null!"+ e.getMessage());
+        }
     }
 
     public Array<Enemy> getAllEnemies() {
@@ -41,17 +47,39 @@ public class EnemyController {
             playerController.getPlayer().getPosX(),
             playerController.getPlayer().getPosY()
         );
-/// hhhhhhhhhhhhhhhh
+
         treeController.update(deltaTime);
         tentacleController.update(deltaTime);
         eyebatController.update(deltaTime);
-//        elderController.update(deltaTime, playerPos);
+        elderController.update(deltaTime);
     }
 
     public void render() {
         treeController.render();
         tentacleController.render();
         eyebatController.render();
-//        elderController.render();
+        elderController.render();
     }
+
+    public int getAliveEnemyCount() {
+        int count = 0;
+        for (Enemy enemy : getAllEnemies()) {
+            if (enemy.isAlive()) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int getDeadEnemyCount() {
+        int deadCount = getAllEnemies().size - getAliveEnemyCount();
+        return deadCount;
+    }
+
+    public ElderController getElderController() {
+        return elderController;
+    }
+
+
+
 }

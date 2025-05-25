@@ -36,11 +36,10 @@ public class DurationMenuView implements Screen {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
 
-        // پر کردن لیست مدت‌ها
+
         Array<Integer> options = new Array<>(new Integer[] {2, 5, 10, 20});
         durationBox.setItems(options);
 
-        // چینش با Table
         Table table = new Table();
         table.setFillParent(true);
         table.center();
@@ -49,17 +48,17 @@ public class DurationMenuView implements Screen {
         table.add(startButton).pad(10);
         stage.addActor(table);
 
-        // Listener برای دکمه شروع بازی
         startButton.addListener(new ClickListener() {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 int chosen = durationBox.getSelected();
                 controller.selectDuration(chosen);
+                controller.setTotalMinutes(chosen);
 
-                // تنظیمات نهایی رو می‌گیریم
+
                 GameSettings settings = controller.getSettings();
 
-                // راه‌اندازی شروع بازی
+
                 Main.getMain().setScreen(
                     new GameView(
                         new GameController(settings),

@@ -35,12 +35,6 @@ public class ProfileController {
         return true;
     }
 
-//    public void deleteAccount() {
-//        userDatabase.removeUser(currentUser);           // حذف از لیست
-//        userDatabase.saveAllUsers(userDatabase.loadAllUsers()); // ذخیره همه کاربران بدون این کاربر
-//        currentUser = null;                             // پاک کردن از حافظه
-//    }
-
 
     public void deleteAccount() {
         userDatabase.removeUser(currentUser);
@@ -57,7 +51,6 @@ public class ProfileController {
         return true;
     }
 
-    // تغییر آواتار با فایل کاربر (مثلاً از درگ‌ و دراپ یا فایل انتخابی سیستم)
     public boolean changeAvatarFromAbsolute(String absolutePath) {
         FileHandle handle = Gdx.files.absolute(absolutePath);
         if (!handle.exists()) return false;
@@ -66,18 +59,6 @@ public class ProfileController {
         userDatabase.saveUser();
         return true;
     }
-//
-//    public String getCurrentAvatarPath() {
-//        return currentUser.getAvatarPath();
-//    }
-//
-//    public String getCurrentUsername() {
-//        return currentUser.getUsername();
-//    }
-//
-//    public User getCurrentUser() {
-//        return currentUser;
-//    }
 
     public void changeAvatarToInternal(String internalPath,UserManager userManager) {
         currentUser.setAvatarPath("avatars/" + internalPath);

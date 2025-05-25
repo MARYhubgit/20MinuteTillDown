@@ -58,6 +58,7 @@ public class Weapon {
     public WeaponType getType() {
         return type;
     }
+
     public int getMaxAmmo(){
         return type.getMaxAmmo();
     }
@@ -80,8 +81,9 @@ public class Weapon {
     public void increaseProjectileCount(int fireRate) {
         type.setFireRate(type.getfireRate()+fireRate);
     }
-    public void setDamageMultiplier(float multiplier) {
-        this.damageMultiplier = multiplier + type.getDamage();
+
+    public void setDamageMultiplier() {
+        this.damageMultiplier = 1.2f * type.getDamage();
     }
 
 

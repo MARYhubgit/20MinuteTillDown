@@ -1,34 +1,37 @@
 package com.tilldawn.Model;
 
 public enum HeroType {
-    WITCH("Witch", "High firepower", "heroes/witch.png"),
-    HUNTER("Hunter", "Long-range attacks", "heroes/hunter.png"),
-    VAMPIRE("Vampire", "Life-stealing", "heroes/vampire.png");
+    SHANA("Shana", 4, 4, true),
+    DIAMOND("Diamond", 1, 7, true),
+    SCARLET("Scarlet", 5, 3, false),
+    LILITH("Lilith", 3, 5, true),
+    DASHER("Dasher", 10, 2, false);
 
-    private final String displayName;
-    private final String description;
-    private final String texturePath;
+    private final String folderName;
+    private final int speed;
+    private final int hp;
+    private final boolean hasWalkAnim;
 
-    HeroType(String displayName, String description, String texturePath) {
-        this.displayName = displayName;
-        this.description = description;
-        this.texturePath = texturePath;
+    HeroType(String folderName, int speed, int hp, boolean hasWalkAnim) {
+        this.folderName = folderName;
+        this.speed = speed;
+        this.hp = hp;
+        this.hasWalkAnim = hasWalkAnim;
     }
 
     public String getDisplayName() {
-        return displayName;
-    }
+        return folderName;    }
 
-    public String getDescription() {
-        return description;
-    }
+    public int getSpeed() { return speed; }
 
-    public String getTexturePath() {
-        return texturePath;
-    }
+    public int getHp() { return hp; }
 
-    @Override
-    public String toString() {
-        return displayName;
+    public boolean hasWalkAnim() { return hasWalkAnim; }
+
+    public static HeroType fromName(String name) {
+        for (HeroType h : values()) {
+            if (h.name().equalsIgnoreCase(name)) return h;
+        }
+        return null;
     }
 }

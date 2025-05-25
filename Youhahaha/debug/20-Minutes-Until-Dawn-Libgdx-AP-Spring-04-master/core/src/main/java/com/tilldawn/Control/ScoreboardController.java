@@ -1,50 +1,43 @@
 package com.tilldawn.Control;
 
-import com.tilldawn.Model.User;
-import com.tilldawn.Model.UserManager;
+import com.tilldawn.Model.ScoreEntry;
+import com.tilldawn.Model.ScoreboardManager;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ScoreboardController {
-    private final List<User> allUsers;
+    private ScoreboardManager scoreboardManager;
 
     public ScoreboardController() {
-        this.allUsers = UserManager.getInstance().getTopUsers();
+        this.scoreboardManager = ScoreboardManager.getInstance();
     }
 
-    public List<User> getSortedByScore() {
-        return allUsers.stream()
-            .sorted(Comparator.comparingInt(User::getScore).reversed())
-            .limit(10)
-            .collect(Collectors.toList());
+    public List<ScoreEntry> getSortedByScore() {
+        return scoreboardManager.getTopScores(10);
     }
 
-    public List<User> getSortedByUsername() {
-        return allUsers.stream()
-            .sorted(Comparator.comparing(User::getUsername))
-            .limit(10)
-            .collect(Collectors.toList());
+    public List<ScoreEntry> getSortedByUsername() {
+        List<ScoreEntry> scores = scoreboardManager.loadScores();
+        scores.sort(Comparator.comparing(ScoreEntry::getUsername));
+        return scores.subList(0, Math.min(10, scores.size()));
     }
 
-    public List<User> getSortedByKills() {
-        return allUsers.stream()
-            .sorted(Comparator.comparingInt(User::getKills).reversed())
-            .limit(10)
-            .collect(Collectors.toList());
+    public List<ScoreEntry> getSortedByKills() {
+        List<ScoreEntry> scores = scoreboardManager.loadScores();
+        scores.sort(Comparator.comparingInt(ScoreEntry::getEnemiesKilled).reversed());
+        return scores.subList(0, Math.min(10, scores.size()));
     }
 
-    public List<User> getSortedBySurvivalTime() {
-        return allUsers.stream()
-            .sorted(Comparator.comparingInt(User::getSurvivalTimeInSeconds).reversed())
-            .limit(10)
-            .collect(Collectors.toList());
+    public List<ScoreEntry> getSortedBySurvivalTime() {
+        List<ScoreEntry> scores = scoreboardManager.loadScores();
+        scores.sort(Comparator.comparingDouble(ScoreEntry::getSurvivedTime).reversed());
+        return scores.subList(0, Math.min(10, scores.size()));
     }
 
-    public String formatSurvivalTime(int seconds) {
-        int min = seconds / 60;
-        int sec = seconds % 60;
+    public String formatSurvivalTime(float seconds) {
+        int min = (int) seconds / 60;
+        int sec = (int) seconds % 60;
         return min + "m " + sec + "s";
     }
 }

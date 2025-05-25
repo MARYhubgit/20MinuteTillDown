@@ -1,6 +1,7 @@
 package com.tilldawn.Control;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.MathUtils;
@@ -8,6 +9,7 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.tilldawn.Main;
 import com.tilldawn.Model.*;
+import com.tilldawn.View.GameView;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -53,6 +55,12 @@ public class WeaponController {
 
     private void updateWeaponPosition() {
         Sprite weaponSprite = weapon.getSprite();
+        if (player == null) {
+            System.out.println("❌ Player is null in WeaponController!");
+        } else {
+            System.out.println("✅ Player position: " + player.getX() + "," + player.getY());
+        }
+
         weaponSprite.setPosition(
             player.getX() + player.getPlayerSprite().getWidth() * 0.5f,
             player.getY() + player.getPlayerSprite().getHeight() * 0.3f
@@ -112,6 +120,7 @@ public class WeaponController {
                 worldCoords.y
             ));}
         weapon.setCurrentAmmo(weapon.getCurrentAmmo() - 1);
+        currentAmmo = weapon.getCurrentAmmo();
     }
 
     private void updateBullets(float delta) {
@@ -168,4 +177,23 @@ public class WeaponController {
             }
         }
     }
+
+    public int getCurrentAmmo() {
+        return this.currentAmmo;
+    }
+
+    public void updateWeaponRotationToMouse(GameView view) {
+        Vector3 mousePos = new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0);
+        view.getGameCamera().unproject(mousePos);
+        handleWeaponRotation((int) mousePos.x, (int) mousePos.y);
+    }
+
+    public void updateWeaponShooting(GameView view) {
+        if (Gdx.input.isButtonJustPressed(Input.Buttons.LEFT)) {  // یا هر کلید دلخواه
+            Vector3 mousePos = new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0);
+            view.getGameCamera().unproject(mousePos);
+            handleWeaponShoot((int) mousePos.x, (int) mousePos.y);
+        }
+    }
+
 }

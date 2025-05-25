@@ -24,12 +24,13 @@ public class TalentHintView implements Screen {
     private UserManager userManager;
 
     public TalentHintView(Main game, UserManager userManager, GameSettings settings, Skin skin) {
+        this.title      = new Label("Hints & Talents", skin);
+        this.userManager = userManager;
         this.game = game;
         this.controller = new TalentMenuController(settings);
         this.skin       = skin;
-        this.backButton = new TextButton("← Back", skin);
-        this.title      = new Label("Hints & Talents", skin);
-        this.userManager = userManager;
+        this.backButton = new TextButton("Back", skin);
+
     }
 
     @Override
@@ -63,7 +64,7 @@ public class TalentHintView implements Screen {
         cheatList.getStyle().font.getData().setScale(0.85f);
         table.add(new ScrollPane(cheatList, skin)).width(700).height(125).pad(5).row();
 
-        // --- Abilities ---
+
         table.add(new Label("Abilities:", skin)).left().pad(5);
         List<String> abilityList = new List<>(skin);
         abilityList.setItems(controller.getAbilities());

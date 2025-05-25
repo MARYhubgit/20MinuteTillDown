@@ -13,17 +13,15 @@ public class TalentMenuController {
         this.settings = settings;
     }
 
-    /** برمی‌گرداند لیستی از نام و توضیح حداقل ۳ هیرو برای بخش راهنما */
     public Array<String> getHeroGuides() {
         Array<String> guides = new Array<>();
         for (HeroType ht : HeroType.values()) {
-            guides.add(ht.getDisplayName() + ": " + ht.getDescription());
+            guides.add(ht.getDisplayName() + ": (hp)" + ht.getHp());
             if (guides.size >= 3) break;
         }
         return guides;
     }
 
-    /** کلیدهایی که کاربر در تنظیمات بازی از آنها استفاده می‌کند */
     public Array<String> getActiveKeys() {
         Array<String> keys = new Array<>();
         for (String key : settings.getKeyBindings()) {
@@ -32,8 +30,6 @@ public class TalentMenuController {
         return keys;
     }
 
-
-    /** لیست کدهای تقلب و توضیح کارکردشان */
     public Array<String> getCheats() {
         Array<String> cheats = new Array<>();
         for (String code : settings.getCheatCodes()) {
@@ -44,8 +40,11 @@ public class TalentMenuController {
 
     private String lookupCheatEffect(String code) {
         switch (code) {
-            case "IDDQD": return "God Mode";
-            case "IDKFA": return "All Weapons";
+            case "l": return "less 1 minute";
+            case "u": return "increase 1 level";
+            case "j": return "increase lives";
+            case "b": return "go to Boss fight";
+            case "k": return "increase danger";
             default:      return "Unknown Effect";
         }
     }

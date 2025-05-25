@@ -12,6 +12,7 @@ public class GameAssetManager {
     private static GameAssetManager instance;
     private final Skin skin;
     private Animation<TextureRegion> eyebatFlyAnim;
+    private Animation<TextureRegion> elderFlyAnim;
     private Animation<TextureRegion> tentacleWalkAnim;
     private Animation<TextureRegion> characterIdleAnim;
     private Animation<TextureRegion> characterRunAnim;
@@ -23,6 +24,8 @@ public class GameAssetManager {
     private Animation<TextureRegion> treeIdleAnim;
     private Animation<TextureRegion> treeWalkAnim;
     private Texture[] treePowerupTexture = new Texture[2];
+    private Texture elderSingleTexture;
+    private Array<TextureRegion> managedTextures = new Array<>();
 
     private GameAssetManager() {
         skin = new Skin(Gdx.files.internal("skin/pixthulhu-ui.json"));
@@ -39,6 +42,7 @@ public class GameAssetManager {
     public void loadTextures() {
         loadEyebatAnimations();
         loadTentacleAnimations();
+        loadElderAnimations();
 
         Array<TextureRegion> playerFrames = new Array<>();
         for (int i = 0; i < 6; i++) {
@@ -60,6 +64,25 @@ public class GameAssetManager {
         }
         eyebatFlyAnim = new Animation<>(0.1f, frames);
     }
+
+//    private void loadElderAnimations() {
+//        TextureRegion frame = new TextureRegion(new Texture("elder/T_elder_1.png"));
+//        elderFlyAnim = new Animation<>(0.1f, frame);
+//    }
+
+    private void loadElderAnimations() {
+        elderSingleTexture = new Texture(Gdx.files.internal("elder/T_elder_1.png"));
+        Array<TextureRegion> singleFrame = new Array<>();
+        singleFrame.add(new TextureRegion(elderSingleTexture));
+        elderFlyAnim = new Animation<>(0.1f, singleFrame);
+
+
+        System.out.println("Elder assets loaded (single-frame animation)");
+    }
+
+
+
+
 
     private void loadTentacleAnimations() {
         Array<TextureRegion> frames = new Array<>();
@@ -130,13 +153,19 @@ public class GameAssetManager {
         bulletTexture.dispose();
         playerIdleTexture.dispose();
         playerRunTexture.dispose();
+        elderSingleTexture.dispose();
 
-        for (TextureRegion region : eyebatFlyAnim.getKeyFrames()) {
+
+        for (Object obj : eyebatFlyAnim.getKeyFrames()) {
+            TextureRegion region = (TextureRegion) obj;
             region.getTexture().dispose();
         }
-        for (TextureRegion region : tentacleWalkAnim.getKeyFrames()) {
+
+        for (Object obj : tentacleWalkAnim.getKeyFrames()) {
+            TextureRegion region = (TextureRegion) obj;
             region.getTexture().dispose();
         }
+
 
         for (Texture tex : treePowerupTexture) {
             if (tex != null) tex.dispose();
@@ -162,5 +191,12 @@ public class GameAssetManager {
     public Animation<TextureRegion> getTreeIdleAnim() { return treeIdleAnim; }
     public Animation<TextureRegion> getCharacterIdleAnimation() { return characterIdleAnim; }
     public Animation<TextureRegion> getCharacterRunAnimation() { return characterRunAnim; }
+    public Animation<TextureRegion> getElderFlyAnim() {
+        return elderFlyAnim;
+    }
+    public Texture getElderSingleTexture() {
+        return elderSingleTexture;
+    }
+
 
 }

@@ -12,7 +12,6 @@ import com.tilldawn.Model.Player;
 public class PlayerController {
     private Player player;
     private Vector2 velocity = new Vector2();
-    private float speed = 300f; // پیکسل بر ثانیه
     private boolean facingRight = true;
 
     public PlayerController(Player player) {
@@ -58,7 +57,8 @@ public class PlayerController {
         }
 
         if(!velocity.isZero()) {
-            velocity.nor().scl(speed);
+            velocity.nor().scl(player.getSpeed() * 150);
+
         }
     }
 
@@ -82,4 +82,6 @@ public class PlayerController {
     public Player getPlayer() {
         return player;
     }
+
+
 }

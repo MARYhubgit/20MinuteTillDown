@@ -7,7 +7,7 @@ import com.tilldawn.Main;
 public class WorldController {
     private PlayerController playerController;
     private Texture backgroundTexture;
-    private OrthographicCamera camera; // اضافه شده
+    private OrthographicCamera camera;
 
     public WorldController(PlayerController playerController, OrthographicCamera camera) {
         this.playerController = playerController;

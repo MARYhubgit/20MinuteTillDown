@@ -1,5 +1,6 @@
 package com.tilldawn;
 
+import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -29,17 +30,25 @@ public class Main extends Game {
         fileChooser = chooser;
     }
 
-    public static Game getMain() {
+    public static Main getMain() {
       return instance;
+    }
+
+    public static UserManager getUserManager() {
+        return instance.userManager;
     }
 
     @Override
     public void create() {
         instance = this;
+
+        Gdx.app.setLogLevel(Application.LOG_DEBUG);
+
+
         batch = new SpriteBatch();
         assets = GameAssetManager.getInstance();
         assets.loadTextures();
-        userManager = new UserManager();
+        userManager = UserManager.getInstance();
 
         if (userManager.getCurrentUser() == null) {
             setScreen(new LoginScreen(this, userManager));
@@ -70,12 +79,10 @@ public class Main extends Game {
         assets.dispose();
     }
 
-    // دسترسی سریع به SpriteBatch
     public static SpriteBatch getBatch() {
         return ((Main) Gdx.app.getApplicationListener()).batch;
     }
 
-    // دسترسی به AssetManager
     public static GameAssetManager getAssets() {
         return ((Main) Gdx.app.getApplicationListener()).assets;
     }
